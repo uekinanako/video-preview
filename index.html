@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画プレビュー</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #111;
+      color: #eee;
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #aaa;
+      margin-bottom: 48px;
+      letter-spacing: 0.1em;
+    }
+    .videos {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .video-card h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: #ddd;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      background: #000;
+      display: block;
+    }
+    .meta {
+      margin-top: 8px;
+      font-size: 0.78rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>VIDEO PREVIEW</h1>
+  <div class="videos">
+
+    <div class="video-card">
+      <h2>昭和の日2026完成版</h2>
+      <video controls preload="metadata">
+        <source src="showa2026.mp4" type="video/mp4">
+      </video>
+      <p class="meta">昭和の日2026完成版.mp4 &nbsp;|&nbsp; 44 MB</p>
+    </div>
+
+    <div class="video-card">
+      <h2>無限グリーンCM</h2>
+      <video controls preload="metadata">
+        <source src="mugen-green.mp4" type="video/mp4">
+      </video>
+      <p class="meta">無限グリーンCM.mp4 &nbsp;|&nbsp; 19 MB</p>
+    </div>
+
+  </div>
+</body>
+</html>
